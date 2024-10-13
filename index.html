@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxueux E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header avec image et texte -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Bienvenue dans notre boutique de luxe</h1>
+                <p>Découvrez des articles exclusifs et élégants pour sublimer votre style.</p>
+                <button>Explorer les produits</button>
+            </div>
+        </div>
+        <!-- Bouton redirigeant vers le panier -->
+    </header>
+
+    <!-- Section Produits en cadre -->
+    <section class="products">
+        <div class="product-card">
+            <img src="https://cdn.discordapp.com/attachments/1277279960431722537/1295123212652249232/Photoroom-20241013_223649.png?ex=670d80fc&is=670c2f7c&hm=33b3c1a94f953489f7e9c1c682f0c2a67737847e965af7fb5e435601e75936d3&" alt="Produit 1">
+            <h2>Pull Ralph Lauren Torsadé Marron</h2>
+            <a href="product1.html" class="product-link"><button>Voir plus</button></a>
+        </div>
+
+        <div class="product-card">
+    <img src="https://cdn.discordapp.com/attachments/1277279960431722537/1295123213357154444/Photoroom-20241013_223500.png?ex=670d80fc&is=670c2f7c&hm=cd60a1350d0e233e958e2ac254cb6f23c06494d5c7937d3b4f458b2aa6eab5df&" alt="Produit 2">
+    <h2>Pull Ralph Lauren Torsadé Rose</h2>
+    <a href="product2.html" class="product-link"><button>Voir plus</button></a> <!-- Modification ici -->
+</div>
+    </section>
+
+    <!-- Modale du panier -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleCartModal()">&times;</span>
+            <h2>Votre panier</h2>
+            <ul id="cart-items"></ul>
+            <button onclick="checkout()">Passer à la caisse</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
